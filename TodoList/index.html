@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <header class="navbar">
+        <h1>Todo List</h1>
+        <div class="field">
+          <input class="input1" placeholder="Search in the list" id="searchtextbox" />
+        </div>
+      </header>
+      
+      <section style="padding: 20px" class="todo-outer">
+        <div style="display: flex; justify-content: center">
+          <h1>CREATE YOUR TODO LIST</h1>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            align-items: center;
+            "
+          
+          >
+          <input class="input2" id = "addtaskinput" placeholder="Enter task" />
+          <input type="hidden" id="saveindex">
+          <button class="btn btn1" id="addtaskbtn">Add Task</button>
+          <button class="btn btn1" id="savetaskbtn">Save Task</button>
+          <button class="btn btn2" id="deleteallbtn">Delete All</button>
+        </div>
+        <div>
+          <table id="addedtasklist">
+           
+          </table>
+        </div>
+      </section>
+      
+    </div>
+    <script src="index.js"></script>
+  </body>
+  </html>
+  
